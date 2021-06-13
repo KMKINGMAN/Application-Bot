@@ -1,0 +1,31 @@
+{
+  "name": "KINGMAN-MODE-APPLICATION",
+  "version": "1.0.0",
+  "description": "It is a Discord bot whose goal is to make it easier for server owners to create a so-called Staff/Mode Application",
+  "main": "index.js",
+  "dependencies": {
+    "ascii-table": "0.0.9",
+    "colors": "^1.4.0",
+    "discord.js": "^12.5.3",
+    "express": "^4.17.1",
+    "figlet": "^1.5.0",
+    "mongoose": "^5.12.13"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "discord.js",
+    "discord-bot",
+    "Staff Aplication",
+    "Moderation Aplication",
+    "MeCodes",
+    "kingman",
+    "Discord Api",
+    "mongoose",
+    "MongoDB"
+  ],
+  "author": "Muhammad Rafat Kurkar +962792914245 ",
+  "license": "MIT"
+}
