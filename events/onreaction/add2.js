@@ -23,14 +23,9 @@ const sa = require('../../me-modlas/application-system/application')
 module.exports = {
 	name: 'messageReactionAdd',
 	async execute(reaction, user, client) {
-    if (reaction.partial) {
-		try {
-			await reaction.fetch();
-		} catch (error) {
-			console.error(error);
-			return;
-		}
-	  }
+    if(user.partial) await user.fetch();
+    if(reaction.partial) await reaction.fetch();
+    if(reaction.message.partial) await reaction.message.fetch(); 
     if(reaction.emoji.name === '❌'){
       let gdata = await si.findOne({GuildID:reaction.message.guild.id})
     if(!gdata) return;
