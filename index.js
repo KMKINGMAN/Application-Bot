@@ -39,7 +39,7 @@
  */
 const kingman = require("./alive/keep_work.js")
 const { MessageEmbed  ,  Collection , Client } = require("discord.js");
-const client = new Client()
+const client = new Client({ partials: ['MESSAGE', 'CHANNEL', 'REACTION'] })
 client.commands = new Collection();
 client.eventss = new Collection();
 client.aliases = new Collection();
