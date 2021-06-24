@@ -31,19 +31,20 @@ module.exports = {
     if(!gdata) return;
     if(!reaction.message.guild.member(user).hasPermission('MANAGE_ROLES')) return
     if(user.bot) return;
-    let data = await sa.findOneAndRemove({MsgID:reaction.message.id})
+    let data = await sa.findOne({MsgID:reaction.message.id})
     if(!data) return;
     let es2 = new MessageEmbed()
     .setAuthor(user.tag, user.avatarURL({ dynamic: true, size: 1024 }))
     .setColor('BLUE')
-    .setDescription(`**This person has been rejected by <@${user.id}>**`)
+    .setDescription(`**<@${data.UserID}> has been rejected by <@${user.id}>**`)
     .setFooter(reaction.message.guild.name, client.user.avatarURL({ dynamic: true, size: 1024 }))
     try {
-      reaction.message.channel.send(es2)
+      reaction.message.channel.send(es2).then(async e =>{
+        let x = await sa.findOneAndRemove({MsgID:reaction.message.id})
+      })
     } catch(e) {
       console.log(` `)
     }
     }
-    
   }
 }
