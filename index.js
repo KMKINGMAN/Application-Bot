@@ -62,8 +62,7 @@ client.on('message', kmsg => {
   if (!kmsg.guild) {
     return kmsg.reply("**ONLY WORK ON SERVERS NOT DM**")
   }
-  let prefix = PREFIX;
-const args1 = kmsg.content.slice(prefix.length).split(/ +/);
+const args1 = kmsg.content.slice(PREFIX.length).split(/ +/);
   if (!kmsg.content.startsWith(PREFIX)) return;
   const args = kmsg.content
     .slice(PREFIX.length)
@@ -73,7 +72,7 @@ const args1 = kmsg.content.slice(prefix.length).split(/ +/);
   if (kmcommand.length === 0) return;
   let kmcode = client.commands.get(kmcommand);
   if (!kmcode) kmcode = client.commands.get(client.aliases.get(kmcommand));
-  if (kmcode) kmcode.run(client, kmsg, args, PREFIX , prefix);
+  if (kmcode) kmcode.run(client, kmsg, args, PREFIX);
 });
 
 
