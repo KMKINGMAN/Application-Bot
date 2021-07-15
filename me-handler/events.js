@@ -54,7 +54,6 @@ module.exports = (client) => {
         table.addRow(file, '✅');
         client.on(event.name, (...args) => event.execute(...args, client));
         }else{
-          client.on(event.name, (...args) => event.execute(...args, client));
           table.addRow(file, `❌`);
           continue;
         }
