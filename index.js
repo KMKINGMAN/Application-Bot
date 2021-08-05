@@ -62,7 +62,6 @@ client.on('message', kmsg => {
   if (!kmsg.guild) {
     return kmsg.reply("**ONLY WORK ON SERVERS NOT DM**")
   }
-const args1 = kmsg.content.slice(PREFIX.length).split(/ +/);
   if (!kmsg.content.startsWith(PREFIX)) return;
   const args = kmsg.content
     .slice(PREFIX.length)
