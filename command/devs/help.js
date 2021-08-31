@@ -13,7 +13,7 @@
 ||_____|<_|__|__|__|__|__|__|__|,_|._|-_|______|    __||_|__   |__|__|__|n |  |
 |   |Alt|A  |                       |A  |Alt|      |<-|| |->|  |0    |. |t |  |
 |   |___|___|_______________________|___|___|      |__|V_|__|  |_____|__|e_|  |
-|                    https://github.com/MeKingman                             |
+|                    https://github.com/KMKINGMAN                             |
 `-----------------------------------------------------------------------------'
  */
 const { MessageEmbed } = require("discord.js");
@@ -25,7 +25,7 @@ const { MessageEmbed } = require("discord.js");
     let commands = kmsg.client.commands.array();
     let EMBED = new MessageEmbed()
     .setTitle(`MeCodes Application System`)
-    .setDescription(`**[HelpMenu](https://github.com/MeKINGMAN)**`)
+    .setDescription(`**[HelpMenu](https://github.com/KMKINGMAN)**`)
     .setColor("GOLD");
     commands.forEach((cmd) => {
         EMBED.addField(
