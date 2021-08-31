@@ -1,10 +1,10 @@
 <h1 align="center">Application Bot</h1>
 <p align="center">
-  <img style="border-radius:50%;" width="300" height="300" src="https://e.top4top.io/p_1965qprez1.gif" alt="MeCodes Logo">
+  <img style="border-radius:50%;" width="300" height="300" src="https://h.top4top.io/p_1873t456n1.png" alt="KMCODES Logo">
 </p>
 
 
-<p align="center">MeCodes Application Bot</p>
+<p align="center">KINGMAN Application Bot</p>
 
 <p align="center">It is a Discord bot whose goal is to make it easier for server owners to create a so-called administration submission</p>
 
