@@ -20,7 +20,7 @@ const express = require('express');
 const colors = require("colors");
 const server = express();
 server.all('/', (req, res)=>{
-    res.send('MeCodes is Here')
+    res.send('KINGMANDEV is Here')
 })
 function keepAlive(){
   server.listen(3000, ()=>{
