@@ -13,7 +13,7 @@
 ||_____|<_|__|__|__|__|__|__|__|,_|._|-_|______|    __||_|__   |__|__|__|n |  |
 |   |Alt|A  |                       |A  |Alt|      |<-|| |->|  |0    |. |t |  |
 |   |___|___|_______________________|___|___|      |__|V_|__|  |_____|__|e_|  |
-|                    https://github.com/MeKingman                             |
+|                    https://github.com/kmkingman                             |
 `-----------------------------------------------------------------------------'
  */
 const { MessageEmbed } = require("discord.js");
@@ -23,17 +23,17 @@ const { MessageEmbed } = require("discord.js");
    description: "This displays contact information with the developer",
    run: async (client, kmsg, args, PREFIX) => {
        let devloper = new MessageEmbed()
-       .setTitle(`! Me » KINGMAN`)
+       .setTitle(`! Km » KINGMAN`)
        .setDescription(`**Muhammad Kurkar**
        __**I am an undergraduate student from northeastern university**__
        `)
        .addFields(
         { name: '**\📱 PhoneNumber**', value: '+962792914245', inline: false },
-        { name: '**\📶 GitHub**', value: '**[click here]( https://github.com/MeKINGMAN )**', inline: false },
-        { name: '**\❤️ Discord Server**', value: '**[MeCodes]( https://discord.gg/mecodes )**', inline: false },
+        { name: '**\📶 GitHub**', value: '**[click here]( https://github.com/KMKINGMAN )**', inline: false },
+        { name: '**\❤️ Discord Server**', value: '**[KINGMAN DEV]( https://discord.gg/kingmandev )**', inline: false },
        )
-       .setImage('https://e.top4top.io/p_1965qprez1.gif')
-       .setFooter('! Me » KINGMAN - MeCodes', 'https://e.top4top.io/p_1965qprez1.gif');
+       .setImage('https://h.top4top.io/p_1873t456n1.png')
+       .setFooter('! KM » KINGMAN - MeCodes', 'https://h.top4top.io/p_1873t456n1.png');
        kmsg.channel.send(devloper)
 
     }
