@@ -94,7 +94,7 @@ const { MessageEmbed } = require("discord.js");
         .setTitle(`**\✅ There is a new Applying**`)
         .setDescription(answer)
         .addField(`**UserID**`, `\`${kmsg.author.id}\``)
-        .setFooter(`MeCodes Apply System`, kmsg.author.avatarURL({ dynamic: true, size: 1024 }))
+        .setFooter(`KINGMANDEV Apply System`, kmsg.author.avatarURL({ dynamic: true, size: 1024 }))
         let msgid = await applych.send(apply)
         msgid.react(`✅`)
         msgid.react(`❌`)
